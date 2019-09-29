@@ -1,22 +1,22 @@
 let estados = [
     { capital: 'Acre', estado: 'AC' },
     { capital: 'Alagoas', estado: 'AL' },
-    { capital: 'Amap\u00e1', estado: 'AP' },
+    { capital: 'Amapá', estado: 'AP' },
     { capital: 'Amazonas', estado: 'AM' },
     { capital: 'Bahia', estado: 'BA' },
-    { capital: 'Cear\u00e1', estado: 'CE' },
+    { capital: 'Ceará', estado: 'CE' },
     { capital: 'Distrito Federal', estado: 'DF' },
-    { capital: 'Esp\u00edrito Santo', estado: 'ES' },
+    { capital: 'Espírito Santo', estado: 'ES' },
     { capital: 'Goiás', estado: 'GO' },
     { capital: 'Maranhão', estado: 'MA' },
     { capital: 'Mato Grosso', estado: 'MT' },
     { capital: 'Mato Grosso do Sul', estado: 'MS' },
     { capital: 'Minas Gerais', estado: 'MG' },
-    { capital: 'Par\u00e1', estado: 'PA' },
-    { capital: 'Para\u00edba', estado: 'PB' },
-    { capital: 'Paran\u00e1', estado: 'PR' },
+    { capital: 'Pará', estado: 'PA' },
+    { capital: 'Paraíba', estado: 'PB' },
+    { capital: 'Paraná', estado: 'PR' },
     { capital: 'Pernambuco', estado: 'PE' },
-    { capital: 'Piau\u00ed', estado: 'PI' },
+    { capital: 'Piauí', estado: 'PI' },
     { capital: 'Rio de Janeiro', estado: 'RJ' },
     { capital: 'Rio Grande do Norte', estado: 'RN' },
     { capital: 'Rio Grande do Sul', estado: 'RS' },
@@ -33,7 +33,7 @@ let estados = [
 for (let x in estados) {
     document.getElementById(estados[x].estado).addEventListener("click", () => {
         console.table(estados[x]);
-        iniciarModal('modal-promocao');
+        iniciarModal('modal-principal');
         adicionaInfo(estados[x].estado,estados[x].capital); 
     });
     document.getElementById(estados[x].estado).addEventListener("mouseleave", () => {

@@ -51,8 +51,8 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #000000;
-    background: #000000;
+    border: 2px solid #ff0000;
+    background: #ff0000;
     cursor: pointer;
     color: white;
     font-size: 1.2em;
@@ -62,4 +62,9 @@ body{
 [d] {
 	transition: .7s;
 	cursor: pointer
+}
+
+svg{
+    height: 95vh;
+    width: 95vw;
 }
