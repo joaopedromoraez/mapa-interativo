@@ -58,3 +58,8 @@ body{
     font-size: 1.2em;
 
 }
+
+[d] {
+	transition: .7s;
+	cursor: pointer
+}

@@ -33,10 +33,8 @@ let estados = [
 for (let x in estados) {
     document.getElementById(estados[x].estado).addEventListener("click", () => {
         console.table(estados[x]);
-        // alert(estados[x].capital+' - '+estados[x].estado);
         iniciarModal('modal-promocao');
-        adicionaInfo(estados[x].estado,estados[x].capital);
-
+        adicionaInfo(estados[x].estado,estados[x].capital); 
     });
     document.getElementById(estados[x].estado).addEventListener("mouseleave", () => {
         document.getElementById(estados[x].estado).style.fill = '#000000';
